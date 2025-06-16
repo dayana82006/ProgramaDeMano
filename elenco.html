@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elenco Artístico</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      body {
+        background-color: #eecda7;
+        color: #3a2929;
+        font-family: "Raleway", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .section {
+        padding: 4rem 1rem;
+      }
+      .section-title {
+        font-size: 2rem;
+        color: #795406;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      .swiper {
+        padding: 1rem 0;
+      }
+      .swiper-slide {
+        background-color: #d88e33d5;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      }
+      .swiper-slide img {
+        padding-top: 5px;
+        border-radius: 15px 15px 0 0;
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+      }
+      .member-name {
+        padding: 1rem;
+        font-weight: bold;
+        color: #e9e9e9;
+      }
+      @media (max-width: 768px) {
+        .swiper-slide img {
+          height: 300px;
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Bailarines -->
+    <section class="section">
+      <h2 class="section-title">Bailarines</h2>
+      <div class="swiper bailarines-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/Dayana.JPG" alt="Bailarín 1" />
+            <div class="member-name">Dayana Hernández</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Silvya.JPG" alt="Bailarín 2" />
+            <div class="member-name">Silvya Cely</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Karen.JPG" alt="Bailarín 2" />
+            <div class="member-name">Karen Torres</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Julian.JPG" alt="Bailarín 2" />
+            <div class="member-name">Julian Bekaria</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Majo.JPG" alt="Bailarín 2" />
+            <div class="member-name">María José Ruiz</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Sullay.JPG" alt="Bailarín 2" />
+            <div class="member-name">Sullay Pérez</div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/JhonC.JPG" alt="Bailarín 2" />
+            <div class="member-name">Jhon Castillo</div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/Camila.JPG" alt="Bailarín 2" />
+            <div class="member-name">Camila Bayona</div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/Rojer.JPG" alt="Bailarín 2" />
+            <div class="member-name">Rogert Gerez</div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/Vania.JPG" alt="Bailarín 2" />
+            <div class="member-name">Vania Benavides</div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/Manzur.jpg" alt="Bailarín 2" />
+            <div class="member-name">Manzur Serrano</div>
+          </div>
+        <div class="swiper-slide">
+          <img src="images/Sergio.JPG" alt="Bailarín 2" />
+          <div class="member-name">Sergio Campos</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/JhonC.JPG" alt="Bailarín 2" />
+          <div class="member-name">John Acevedo</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/Alison.JPG" alt="Bailarín 2" />
+          <div class="member-name">Alisson Trigos</div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Directores -->
+    <section class="section">
+      <h2 class="section-title">Directores</h2>
+      <div class="swiper directores-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/director1.jpg" alt="Director 1" />
+            <div class="member-name">Nombre Director 1</div>
+          </div>
+          <!-- más directores -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Músicos -->
+    <section class="section">
+      <h2 class="section-title">Músicos</h2>
+      <div class="swiper musicos-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/musico1.jpg" alt="Músico 1" />
+            <div class="member-name">Nombre Músico 1</div>
+          </div>
+          <!-- más músicos -->
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiperConfigs = {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      };
+
+      new Swiper(".bailarines-swiper", swiperConfigs);
+      new Swiper(".directores-swiper", swiperConfigs);
+      new Swiper(".musicos-swiper", swiperConfigs);
+    </script>
+  </body>
+</html>
