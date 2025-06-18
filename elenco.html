@@ -256,24 +256,28 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiperConfigs = {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        },
-      };
+  <script>
+  const swiperConfigs = {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 3000, // 3 segundos
+      disableOnInteraction: false, // para que no se detenga al interactuar
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  };
 
-      new Swiper(".bailarines-swiper", swiperConfigs);
-      new Swiper(".directores-swiper", swiperConfigs);
-      new Swiper(".musicos-swiper", swiperConfigs);
-    </script>
+  new Swiper(".bailarines-swiper", swiperConfigs);
+  new Swiper(".musicos-swiper", swiperConfigs);
+</script>
+
   </body>
 </html>
