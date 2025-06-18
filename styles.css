@@ -23,7 +23,7 @@
 #fechas,
 #equipo,
 #comentarios {
-  background-color: #e4d6b0;
+  background-color:#fadbc3b6;
 }
 /* Secciones */
 section {
@@ -167,7 +167,7 @@ a:hover {
 /* Navbar */
 .navbar {
   background-color: rgba(30, 30, 48, 0.95);
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   transition: var(--transition);
 }
 
@@ -416,11 +416,11 @@ a:hover {
 
 /* Fechas */
 #fechas {
-  background-color: #ff9544b6;
+  background-color: #f5d6beb6;
 }
 
 .date-card {
-  background-color: rgba(202, 136, 50, 0.5);
+  background-color: rgba(236, 187, 147, 0.5);
   border: none;
   border-radius: 10px;
   margin: 0 10px;
@@ -435,7 +435,7 @@ a:hover {
 }
 
 .date-card .card-title {
-  color: #fffefc;
+  color: #c76f34;
   font-size: 1.5rem;
 }
 
